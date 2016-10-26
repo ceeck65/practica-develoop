@@ -1,8 +1,13 @@
+/*!
+ * Copyright 2016 Develoop.
+ * Licensed MIT
+/*! Author:  Mario Fernandez */
 
 body{
     background: url("../img/bg.png") repeat;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 .navbar {
@@ -19,13 +24,23 @@ body{
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:focus
+.navbar-default .navbar-nav > .active > li:hover
+{
     color: #FFFFFF !important;
     background-color: #0f0f0f !important;
     font-weight: bold;
     z-index: 100;
     width: 102%;
     margin-left: -1px;
+}
+
+.navbar-default .navbar-nav > li:hover,
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: #FFFFFF !important;
+    background-color: #0f0f0f !important;
+    font-weight: bold;
 }
 
 .nav-login {
@@ -40,6 +55,7 @@ body{
 .nav-login > li:hover {
     background: #24b2be;
 }
+
 
 .container-fluid {
      padding-right: 0 !important;
@@ -75,4 +91,68 @@ body{
     margin-bottom: 12px !important;
     list-style: none;
     background: none !important;
+}
+
+section {
+    background: white;
+    border: 1px solid #ececec;
+    padding: 1%;
+    margin-bottom: 3.5%;
+    box-shadow: 0 0 1px rgba(205, 205, 205, 0.5);
+}
+
+
+.enterprise > h1 {
+    font-size: 1.5em;
+    padding-top: 1.5%!important;
+    margin-top: 0.9%;
+    margin-left: 0;
+    margin-bottom: 1.5%;
+}
+
+.gradient{
+    top: 0;
+    height: 7px !important;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(23, 99, 108, 1) 0%, rgba(34, 168, 177, 0.8) 33%, rgb(41, 198, 213) 67%, rgba(49, 232, 249, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(23, 99, 108, 1)), color-stop(33%, rgb(34, 168, 177)), color-stop(67%, rgb(41, 198, 213)), color-stop(100%, rgb(49, 232, 249)));
+    background: -webkit-linear-gradient(left, rgba(23, 99, 108, 1) 0%, rgb(34, 168, 177) 33%, rgb(41, 198, 213) 67%, rgb(49, 232, 249) 100%);
+    background: -o-linear-gradient(left, rgba(23, 99, 108, 1) 0%, rgb(34, 168, 177) 33%, rgb(41, 198, 213) 67%, rgb(49, 232, 249) 100%);
+    background: -ms-linear-gradient(left, rgba(23, 99, 108, 1) 0%, rgb(34, 168, 177) 33%, rgb(41, 198, 213) 67%, rgb(49, 232, 249) 100%);
+    background: linear-gradient(to right, rgba(23, 99, 108, 1) 0%, rgb(34, 168, 177) 33%, rgb(41, 198, 213) 67%, rgb(49, 232, 249) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17636c', endColorstr='#2dc2d3', GradientType=1);
+}
+
+
+.btn-primary  {
+    background-color: #2295a1 !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 1px rgba(180, 180, 180, 0.9);
+    margin-top: 0.1% !important;
+    margin-bottom: 2.2% !important;
+    padding: 1.8% 5% !important;
+    font-size: 1.1em !important;
+    border: 1px solid #2295a1 !important;
+}
+
+footer {
+    background: white;
+}
+
+.footer ul > li {
+    list-style:none !important;
+    margin-left: 0;
+    margin-bottom: 0.5% !important;
+}
+
+.footer h3 {
+     font-size: 1.2em;
+     font-weight: bold;
+     margin-left: 20% !important;
+     margin-bottom: 10% !important;
+ }
+
+.footer p {
+    margin-top: 5% !important;
+    margin-left: 4.5% !important;
 }
