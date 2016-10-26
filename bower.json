@@ -1,0 +1,24 @@
+{
+  "name": "practica",
+  "description": "Proyecto de examen",
+  "main": "",
+  "authors": [
+    "Mario Fernandez"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3",
+    "bootstrap": "3.*",
+    "font-awesome":"4.*",
+    "tether": "1.3.*"
+  }
+}
