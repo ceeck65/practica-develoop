@@ -2,12 +2,18 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends  CI_Controller {
+class Home extends Base_Controller {
 
+
+	public function __construct()
+	{
+		parent::__construct();
+	}
 
     public function index()
     {
-        $this->load->view('index');
+
+    	echo $this->templates->render('enterprise/index');
     }
 
 }
